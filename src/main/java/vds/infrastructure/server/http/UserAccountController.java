@@ -1,5 +1,6 @@
-package vds.infrastructure.http;
+package vds.infrastructure.server.http;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import vds.dto.deposit.DepositFromMobileRequest;
 import vds.dto.transfer.MoneyByUserIDRequest;
 import vds.spi.AccountService;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="users/account")
 @Api(tags="UserAccount")
 public class UserAccountController {
+    @Autowired
     private AccountService serviceProvider;
 
 //    public UserAccountController(AccountServiceInterface userAccountService) { this._userAccountService = userAccountService; }

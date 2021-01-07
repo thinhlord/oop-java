@@ -1,4 +1,4 @@
-package vds.infrastructure.http;
+package vds.infrastructure.server.http;
 
 import vds.spi.TrackingService;
 import vds.dto.request.RegisterAccountRequest;
